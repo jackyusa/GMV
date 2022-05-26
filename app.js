@@ -4,9 +4,9 @@ window.addEventListener('mousemove', (e) => {
     cursor.style.left = e.pageX + 'px';
     cursor.style.top = e.pageY + 'px';
     cursor.setAttribute('data-fromTop', (cursor.offSetTop - scrollY))
-})
+});
 
 window.addEventListener('scroll', () => {
     const fromTop = parseInt(cursor.getAttribute('data-fromTop'));
     cursor.style.top = scrollY + fromTop + 'px';
-})
+});
