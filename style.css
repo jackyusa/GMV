@@ -200,7 +200,7 @@ nav img{
     line-height: 22px;
 }
 .tradingview-widget-container{
-    position: absolute;
+    width: 60%;
     margin: auto;
-    padding-left: 320px;
+    text-align: center;
 }
