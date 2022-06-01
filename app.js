@@ -1,4 +1,4 @@
-const cursor = document.querySelector('.cursor');
+/*const cursor = document.querySelector('.cursor');
 
 window.addEventListener('mousemove', (e) => {
     cursor.style.left = e.pageX + 'px';
@@ -10,3 +10,4 @@ window.addEventListener('scroll', () => {
     const fromTop = parseInt(cursor.getAttribute('data-fromTop'));
     cursor.style.top = scrollY + fromTop + 'px';
 });
+*/

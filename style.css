@@ -6,13 +6,18 @@
     cursor: none;
     */
 }
+a:link, a:visited {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
 body{
     overflow-x: hidden;
 }
 html{
     scroll-behavior: smooth;
 }
-
+/*----------------------- HEADER -----------------------*/
 .header{
     min-height: 100vh;
     width: 100%;
@@ -21,7 +26,7 @@ html{
     background-size: cover;
     position: relative;
 }
-/*
+/*----------------------- CUSTOM CURSOR CODE ------------*/
 .cursor{
     position: absolute;
     left: 0;
@@ -36,7 +41,7 @@ html{
     transform: translate(-30%,-50%);
 }
 */
-
+/*--------------------- TITLE SECTION -------------------*/
 nav{
     display: flex;
     padding: 2% 6%;
@@ -44,9 +49,15 @@ nav{
     align-items: center;
 }
 nav img{
+    padding-top: 40px;
+    padding-left: 40px;
     width: 140px;
 }
 .nav-links{
+    position: absolute;
+    top: 80px;
+    right: 40px;
+    display: inline-block;
     flex: 1;
     text-align: right;
 }
@@ -99,7 +110,14 @@ nav img{
     list-style: none;
     padding: 2px 4px
 }
-
+.table img{
+    width: 30px;
+    opacity: 60%;
+}
+.table img:hover{
+    opacity: 100%;
+}
+/*---------------------- MOBILE CODE -------------*/
 @media(max-width: 700px){
     .text-box h1{
         font-size: 20px;
@@ -129,7 +147,7 @@ nav img{
     */
 }
 
-/* --- news --- */
+/*------------------------ NEWS SECTION ------- */
 .news{
     min-height: 60vh;
     width: 80%;
@@ -138,7 +156,7 @@ nav img{
     background-size: cover;
     position: relative;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 100px;
 }
 .news h1{
     font-size: 36px;
@@ -163,7 +181,7 @@ nav img{
     box-sizing: border-box;
 }
 
-/* --- brands --- */
+/*------------------- BRANDS SECTION --------- */
 .brands{
     min-height: 60vh;
     width: 80%;
@@ -192,7 +210,7 @@ nav img{
     box-sizing: border-box;
 }
 
-/* --- stocks --- */
+/*--------------------- STOCKS SECTION ----------*/
 .stocks{
     min-height: 60vh;
     width: 80%;
@@ -202,6 +220,7 @@ nav img{
     background-position: center;
     background-size: cover;
     position: relative;
+    padding-bottom: 100px;
 }
 .stocks h1{
     font-size: 36px;
@@ -216,8 +235,58 @@ nav img{
     width: 80vh;
     margin: auto;
 }
-.about{
+
+/*---------------------- SERVICES SECTION -------*/
+.services{
     min-height: 60vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: #F5F5F5;
+}
+.media-scroller{
+    min-height: 40vh;
+    width: 85%;
+    margin: auto;
+    text-align: center;
+    padding-top: 20px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    display: grid;
+    grid-auto-flow:column;
+    grid-auto-columns: 28%;
+
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+}
+.media-element{
+    display: grid;
+    grid-template-rows: min-content;
+    background: #DCDCDC;
+    border-radius: 40px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: content-box;
+    margin-left: 30px;
+    box-shadow: 5px 5px 10px gray;
+}
+.snaps-inline{
+    scroll-snap-type: inline mandatory;
+    scroll-padding-inline: 10px;
+}
+.snaps-inline > * {
+    scroll-snap-align: start;
+
+}
+/*--------------------- CONTACT SECTION -----------*/
+.contact{
+    background-color: #000;
+    min-height: 40vh;
     width: 100%;
     margin: auto;
     text-align: center;
@@ -225,6 +294,37 @@ nav img{
     background-position: center;
     background-size: cover;
     position: relative;
-    background-color: #F5F5F5;
-
+}
+.contact img{
+    width: 150px;
+}
+.contact h4 a{
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+}
+.contact h4 a:hover{
+    color: gray;
+}
+.contact p{
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 11px;
+}
+.table2{
+    display: table;
+    margin: auto;
+    padding-bottom: 100px;
+}
+.table2 ul li{
+    float: left;
+    list-style: none;
+    padding: 2px 4px
+}
+.table2 img{
+    width: 23px;
+}
+.table2 img:hover{
+    opacity: 40%;
 }
