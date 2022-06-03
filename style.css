@@ -127,6 +127,7 @@ nav img{
 }
 .table img:hover{
     opacity: 100%;
+    transition: .5s;
 }
 /*---------------------- MOBILE CODE -------------*/
 @media(max-width: 700px){
@@ -282,6 +283,7 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 90%;
 }
 .media-element2 h4{
     font-size: 25px;
@@ -297,6 +299,7 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 90%;
 }
 .media-element3 h4{
     font-size: 25px;
@@ -312,6 +315,7 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 90%;
 }
 .media-element4 h4{
     font-size: 25px;
@@ -327,6 +331,7 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 90%;
 }
 .media-element5 h4{
     font-size: 25px;
@@ -342,6 +347,7 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 90%;
 }
 .media-element6 h4{
     font-size: 25px;
@@ -357,6 +363,7 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 90%;
 }
 .media-element7 h4{
     font-size: 25px;
@@ -372,6 +379,7 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 90%;
 }
 .media-element8 h4{
     font-size: 25px;
@@ -387,6 +395,7 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
+    opacity: 90%;
 }
 .media-element9 h4{
     font-size: 25px;
@@ -402,6 +411,7 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 /*------------------- OUTBOX LAYOUT -----*/
 .media-scroller{
@@ -415,7 +425,7 @@ nav img{
     position: relative;
     display: grid;
     grid-auto-flow:column;
-    grid-auto-columns: 28%;
+    grid-auto-columns: 43%;
 
     overflow-x: auto;
     overscroll-behavior-inline: contain;
@@ -444,6 +454,7 @@ nav img{
     padding: 30px 12px;
     box-sizing: content-box;
     margin-left: 30px;
+    margin-right: 14px;
     box-shadow: 5px 5px 10px gray;
     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Sales.png);
     background-position: center;
@@ -574,30 +585,48 @@ nav img{
 /*-------------------- HOVER BUTTON --------------*/
 .media-element1 p:hover{
     font-size: 17px;
+    transition: .6s;
+    opacity: 100%;
 }
 .media-element2 p:hover{
     font-size: 17px;
+    transition: .6s;
+    opacity: 100%;
 }
 .media-element3 p:hover{
     font-size: 17px;
+    transition: .6s;
+    opacity: 100%;
 }
 .media-element4 p:hover{
     font-size: 17px;
+    transition: .6s;
+    opacity: 100%;
 }
 .media-element5 p:hover{
     font-size: 17px;
+    transition: .6s;
+    opacity: 100%;
 }
 .media-element6 p:hover{
     font-size: 17px;
+    transition: .6s;
+    opacity: 100%;
 }
 .media-element7 p:hover{
     font-size: 17px;
+    transition: .6s;
+    opacity: 100%;
 }
 .media-element8 p:hover{
     font-size: 17px;
+    transition: .6s;
+    opacity: 100%;
 }
 .media-element9 p:hover{
     font-size: 17px;
+    transition: .6s;
+    opacity: 100%;
 }
 /*--------------------- CONTACT SECTION -----------*/
 .contact{
@@ -623,6 +652,7 @@ nav img{
 }
 .contact h4 a:hover{
     color: gray;
+    transition: .5s;
 }
 .contact p{
     color: white;
@@ -643,5 +673,6 @@ nav img{
     width: 23px;
 }
 .table2 img:hover{
-    opacity: 40%;
+    opacity: 50%;
+    transition: .5s;
 }
