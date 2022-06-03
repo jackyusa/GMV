@@ -14,6 +14,8 @@ window.addEventListener('scroll', () => {
 var i = 0;
 var txt = 'Green Market Ventures';
 var speed = 80;
+var x = 0;
+var checker = 0;
 
 window.onload = typeWriter;
 
@@ -24,3 +26,25 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 };
+
+var navLinks = document.getElementById("navLinks");
+
+function showMenu(){
+  navLinks.style.right = "0";
+}
+
+function hideMenu(){
+  navLinks.style.right = "-200px";
+}
+/*
+document.addEventListener('keydown', function(event){
+    if(event.key == 'w' && checker != 1){
+        document.getElementById("title").innerHTML = '';
+        txt = 'hehe weed';
+        i = 0;
+        typeWriter();
+        checker = 1;
+        cursor.offset
+    }
+});
+*/

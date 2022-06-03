@@ -124,29 +124,74 @@ nav img{
 .table img{
     width: 30px;
     opacity: 60%;
+    transition: .5s;
 }
 .table img:hover{
     opacity: 100%;
     transition: .5s;
 }
+.openMenu{
+    font-size: 45px;
+    font-family: 'bourbon';
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 45px 30px;
+    display: none;
+    color: white;
+    cursor: pointer;
+    font-family: 'Akshar', sans-serif;
+}
+.closeMenu{
+    font-family: 'bourbon';
+    display: none;
+    color: white;
+    cursor: pointer;
+}
 /*---------------------- MOBILE CODE -------------*/
 @media(max-width: 700px){
+    html, body {
+        overflow-x: hidden;
+    }
+    .openMenu {
+        display: block;
+    }
+    nav img{
+        padding-top: 20px;
+        padding-left: 20px;
+        width: 110px;
+    }
     .text-box h1{
         font-size: 20px;
+    }
+    .text-box p{
+        font-size: 10px;
     }
     .nav-links ul li{
         display: block;
 
     }
     .nav-links{
-        position: absolute;
+        position: fixed;
         background: #000;
         height: 100vh;
         width: 170px;
         top: 0;
-        right: 0;
+        right: -170px;
         text-align: left;
         z-index: 2;
+        transition: .9s;
+    }
+    .closeMenu{
+        display: block;
+        color: #ffff;
+        margin: 10px;
+        font-size: 25px;
+        cursor: pointer;
+        font-family: 'Akshar', sans-serif;
+    }
+    .nav-links ul{
+        padding: 10px;
     }
     /*
     .cursor{
@@ -160,6 +205,9 @@ nav img{
 }
 
 /*------------------------ NEWS SECTION ------- */
+.background{
+    background-color: #F5F5F5
+}
 .news{
     min-height: 60vh;
     width: 80%;
@@ -284,6 +332,7 @@ nav img{
     justify-content: center;
     align-items: center;
     opacity: 90%;
+    transition: .6s ease-out
 }
 .media-element2 h4{
     font-size: 25px;
@@ -300,6 +349,7 @@ nav img{
     justify-content: center;
     align-items: center;
     opacity: 90%;
+    transition: .6s ease-out
 }
 .media-element3 h4{
     font-size: 25px;
@@ -316,6 +366,7 @@ nav img{
     justify-content: center;
     align-items: center;
     opacity: 90%;
+    transition: .6s ease-out
 }
 .media-element4 h4{
     font-size: 25px;
@@ -332,6 +383,7 @@ nav img{
     justify-content: center;
     align-items: center;
     opacity: 90%;
+    transition: .6s ease-out
 }
 .media-element5 h4{
     font-size: 25px;
@@ -348,6 +400,7 @@ nav img{
     justify-content: center;
     align-items: center;
     opacity: 90%;
+    transition: .6s ease-out
 }
 .media-element6 h4{
     font-size: 25px;
@@ -364,6 +417,7 @@ nav img{
     justify-content: center;
     align-items: center;
     opacity: 90%;
+    transition: .6s ease-out
 }
 .media-element7 h4{
     font-size: 25px;
@@ -380,6 +434,7 @@ nav img{
     justify-content: center;
     align-items: center;
     opacity: 90%;
+    transition: .6s ease-out
 }
 .media-element8 h4{
     font-size: 25px;
@@ -396,6 +451,7 @@ nav img{
     justify-content: center;
     align-items: center;
     opacity: 90%;
+    transition: .6s ease-out
 }
 .media-element9 h4{
     font-size: 25px;
@@ -411,7 +467,7 @@ nav img{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    transition: .6s ease-out
 }
 /*------------------- OUTBOX LAYOUT -----*/
 .media-scroller{
@@ -649,6 +705,7 @@ nav img{
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     font-weight: 300;
+    transition: .5s;
 }
 .contact h4 a:hover{
     color: gray;
@@ -671,6 +728,7 @@ nav img{
 }
 .table2 img{
     width: 23px;
+    transition: .5s;
 }
 .table2 img:hover{
     opacity: 50%;

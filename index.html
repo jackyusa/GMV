@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com"> 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
     <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 
 <body>
@@ -17,16 +18,17 @@
         <div id="headerPage">
         <nav>
             <a href="index.html"><img src="images/logo.png"></a>
-            <div class="nav-links">
+            <div class="nav-links" id="navLinks">
+                <i class="closeMenu" onclick="hideMenu()">x</i>
                 <ul>
-                    <li><a href="#headerPage">HOME</a> </li>
-                    <li><a href="#newsPage">NEWS</a></li>
-                    <li><a href="#brandsPage">BRANDS</a></li>
-                    <li><a href="#stocksPage">STOCKS</a></li>
-                    <li><a href="#servicesPage">SERVICES</a></li>
+                    <li><a href="#newsPage" onclick="hideMenu()">NEWS</a></li>
+                    <li><a href="#brandsPage" onclick="hideMenu()">BRANDS</a></li>
+                    <li><a href="#stocksPage" onclick="hideMenu()">STOCKS</a></li>
+                    <li><a href="#servicesPage" onclick="hideMenu()">SERVICES</a></li>
                     <!-- <li><a href="#contactPage">CONTACT</a></li> -->
                 </ul>
             </div>
+            <i class="openMenu" onclick="showMenu()">=</i>
         </nav>
 
         <div class="text-box">
@@ -44,7 +46,8 @@
     </div>
     </section>
 
-    <!-- STORIES SECTION -->
+    <!-- NEWS SECTION -->
+    <div class="background">
     <section class="news">
         <div id="newsPage">
         <h1>NEWS</h1>
@@ -67,7 +70,7 @@
         </div>
     </section>
 
-    <!-- NEWS SECTION -->
+    <!-- BRANDS SECTION -->
     <section class="brands">
         <div id="brandsPage">
         <h1>OUR BRANDS</h1>
@@ -104,7 +107,7 @@
     <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/markets/" rel="noopener" target="_blank"><span class="blue-text">Markets</span></a> by TradingView</div>
     <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
     {
-    "symbols": [
+    "symbols":[
       {
         "description": "",
         "proName": "NYSE:ABBV"
@@ -172,7 +175,7 @@
     </div>
   </div>
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-def9782b-a372-4626-9db3-53973680a930"></div>
+    <div class="elfsight-app-def9782b-a372-4626-9db3-53973680a930"></div>
   </section>
   <!-- TradingView Widget END -->
 
@@ -182,7 +185,7 @@
     </div>
     <script src="./app.js"></script>
     -->
-
+    </div>
     <!-- SERVICES SECTION-->
     <section class="services">
         <div id="servicesPage">
