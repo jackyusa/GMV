@@ -11,3 +11,16 @@ window.addEventListener('scroll', () => {
     cursor.style.top = scrollY + fromTop + 'px';
 });
 */
+var i = 0;
+var txt = 'Green Market Ventures';
+var speed = 80;
+
+window.onload = typeWriter;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("title").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+};
