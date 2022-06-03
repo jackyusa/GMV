@@ -17,6 +17,17 @@ body{
 html{
     scroll-behavior: smooth;
 }
+::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+::-webkit-scrollbar-thumb{
+    border-radius: 100px;
+    background-color: darkgray;
+}
+::-webkit-scrollbar-track{
+    width: 10px;
+}
 /*----------------------- HEADER -----------------------*/
 .header{
     min-height: 100vh;
@@ -159,8 +170,8 @@ nav img{
     padding-top: 100px;
 }
 .news h1{
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 400;
 }
 .news p{
     font-size: 14px;
@@ -193,8 +204,8 @@ nav img{
     position: relative;
 }
 .brands h1{
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 400;
 }
 .brands p{
     font-size: 14px;
@@ -220,22 +231,20 @@ nav img{
     background-position: center;
     background-size: cover;
     position: relative;
-    padding-bottom: 100px;
 }
 .stocks h1{
-    font-size: 36px;
-    font-weight: 600;
+    font-size: 25px;
+    font-weight: 400;
 }
 .stocks p{
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
+    padding-bottom: 100px;
 }
-.tradingview-widget-container{
-    width: 80vh;
-    margin: auto;
+.elfsight-app-def9782b-a372-4626-9db3-53973680a930{
+    padding: 100px;
 }
-
 /*---------------------- SERVICES SECTION -------*/
 .services{
     min-height: 60vh;
@@ -248,6 +257,153 @@ nav img{
     position: relative;
     background-color: #F5F5F5;
 }
+.services h1{
+    font-size: 25px;
+    font-weight: 400;
+}
+.services p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding-bottom: 10px;
+}
+/*---------------------- IN BOX CONTENT --------*/
+.media-element1 h4{
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element1 p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element2 h4{
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element2 p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element3 h4{
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element3 p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element4 h4{
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element4 p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element5 h4{
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element5 p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element6 h4{
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element6 p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element7 h4{
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element7 p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element8 h4{
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element8 p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element9 h4{
+    font-size: 25px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.media-element9 p{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*------------------- OUTBOX LAYOUT -----*/
 .media-scroller{
     min-height: 40vh;
     width: 85%;
@@ -264,16 +420,149 @@ nav img{
     overflow-x: auto;
     overscroll-behavior-inline: contain;
 }
-.media-element{
+.media-element1{
     display: grid;
     grid-template-rows: min-content;
-    background: #DCDCDC;
     border-radius: 40px;
     margin-bottom: 5%;
     padding: 30px 12px;
     box-sizing: content-box;
     margin-left: 30px;
     box-shadow: 5px 5px 10px gray;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/BrandStrategy.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #DCDCDC;
+    font-family: 'Akshar', sans-serif;
+}
+.media-element9{
+    display: grid;
+    grid-template-rows: min-content;
+    border-radius: 40px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: content-box;
+    margin-left: 30px;
+    box-shadow: 5px 5px 10px gray;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Sales.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #DCDCDC;
+    font-family: 'Akshar', sans-serif;
+}
+.media-element2{
+    display: grid;
+    grid-template-rows: min-content;
+    border-radius: 40px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: content-box;
+    margin-left: 30px;
+    box-shadow: 5px 5px 10px gray;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/WhiteLabeling.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #DCDCDC;
+    font-family: 'Akshar', sans-serif;
+}
+.media-element3{
+    display: grid;
+    grid-template-rows: min-content;
+    border-radius: 40px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: content-box;
+    margin-left: 30px;
+    box-shadow: 5px 5px 10px gray;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Packaging.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #DCDCDC;
+    font-family: 'Akshar', sans-serif;
+}
+.media-element4{
+    display: grid;
+    grid-template-rows: min-content;
+    border-radius: 40px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: content-box;
+    margin-left: 30px;
+    box-shadow: 5px 5px 10px gray;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Seeds.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #DCDCDC;
+    font-family: 'Akshar', sans-serif;
+}
+.media-element5{
+    display: grid;
+    grid-template-rows: min-content;
+    border-radius: 40px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: content-box;
+    margin-left: 30px;
+    box-shadow: 5px 5px 10px gray;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Cloning.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #DCDCDC;
+    font-family: 'Akshar', sans-serif;
+}
+.media-element6{
+    display: grid;
+    grid-template-rows: min-content;
+    border-radius: 40px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: content-box;
+    margin-left: 30px;
+    box-shadow: 5px 5px 10px gray;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/TissueCulture.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #DCDCDC;
+    font-family: 'Akshar', sans-serif;
+}
+.media-element7{
+    display: grid;
+    grid-template-rows: min-content;
+    border-radius: 40px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: content-box;
+    margin-left: 30px;
+    box-shadow: 5px 5px 10px gray;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/LED.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #DCDCDC;
+    font-family: 'Akshar', sans-serif;
+}
+.media-element8{
+    display: grid;
+    grid-template-rows: min-content;
+    border-radius: 40px;
+    margin-bottom: 5%;
+    padding: 30px 12px;
+    box-sizing: content-box;
+    margin-left: 30px;
+    box-shadow: 5px 5px 10px gray;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/Soil.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    color: #DCDCDC;
+    font-family: 'Akshar', sans-serif;
 }
 .snaps-inline{
     scroll-snap-type: inline mandatory;
@@ -281,16 +570,44 @@ nav img{
 }
 .snaps-inline > * {
     scroll-snap-align: start;
-
+}
+/*-------------------- HOVER BUTTON --------------*/
+.media-element1 p:hover{
+    font-size: 17px;
+}
+.media-element2 p:hover{
+    font-size: 17px;
+}
+.media-element3 p:hover{
+    font-size: 17px;
+}
+.media-element4 p:hover{
+    font-size: 17px;
+}
+.media-element5 p:hover{
+    font-size: 17px;
+}
+.media-element6 p:hover{
+    font-size: 17px;
+}
+.media-element7 p:hover{
+    font-size: 17px;
+}
+.media-element8 p:hover{
+    font-size: 17px;
+}
+.media-element9 p:hover{
+    font-size: 17px;
 }
 /*--------------------- CONTACT SECTION -----------*/
 .contact{
     background-color: #000;
-    min-height: 40vh;
+    min-height: 10vh;
     width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 60px;
+    padding-top: 10px;
+    padding-bottom: 15px;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -315,7 +632,7 @@ nav img{
 .table2{
     display: table;
     margin: auto;
-    padding-bottom: 100px;
+    padding-bottom: 80px;
 }
 .table2 ul li{
     float: left;
