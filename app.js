@@ -1,50 +1,36 @@
-/*const cursor = document.querySelector('.cursor');
+const hero = document.querySelector('.hero');
+const slider = document.querySelector('.slider');
+const logo = document.querySelector('.logo');
+const hamburger = document.querySelector('.hamburger');
+const headline = document.querySelector('.headline');
+const para = document.querySelector('.para');
 
-window.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.pageX + 'px';
-    cursor.style.top = e.pageY + 'px';
-    cursor.setAttribute('data-fromTop', (cursor.offsetTop - scrollY))
-});
+const t1 = new TimelineMax();
 
-window.addEventListener('scroll', () => {
-    const fromTop = parseInt(cursor.getAttribute('data-fromTop'));
-    cursor.style.top = scrollY + fromTop + 'px';
-});
-*/
+t1.fromTo(hero,1,{height: "0%"},{height: '100%'})
+.fromTo(slider,.8,{x:'-100%'},{x:'0%'})
+.fromTo(para,.8,{x:'-110%'},{x:'0%'})
+.fromTo(logo,.8,{y:'-400%'},{y:'0%'},"-=.8")
+.fromTo(hamburger,.8,{y:'-400%'},{y:'0%'},"-=.7")
+.fromTo(hero,.8,{width: '100%'},{width:'96%'},"-=.8");
+
 var i = 0;
 var txt = 'Green Market Ventures';
-var speed = 80;
+var speed = 50;
 var x = 0;
 var checker = 0;
 
-window.onload = typeWriter;
+
+window.onloadstart = wait();
+
+function wait(){
+    setTimeout(typeWriter, 1000);
+};
 
 function typeWriter() {
   if (i < txt.length) {
-    document.getElementById("title").innerHTML += txt.charAt(i);
+    headline.innerHTML += txt.charAt(i);
     i++;
     setTimeout(typeWriter, speed);
   }
 };
-
-var navLinks = document.getElementById("navLinks");
-
-function showMenu(){
-  navLinks.style.right = "0";
-}
-
-function hideMenu(){
-  navLinks.style.right = "-200px";
-}
-/*
-document.addEventListener('keydown', function(event){
-    if(event.key == 'w' && checker != 1){
-        document.getElementById("title").innerHTML = '';
-        txt = 'hehe weed';
-        i = 0;
-        typeWriter();
-        checker = 1;
-        cursor.offset
-    }
-});
-*/
