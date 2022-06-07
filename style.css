@@ -33,7 +33,7 @@ html{
     width: 100%;
     height: 100vh;
     background-color: #EDA361;
-    background: linear-gradient(to left, #EDA361, #F1B581);
+    background: linear-gradient(to left, #EDA361, #EDA361);
     z-index: -1;
 }
 .logo{
@@ -97,6 +97,29 @@ nav{
     left: 0;
     top: 0;
     opacity: 0.3;
+}
+/*---------------------- MOBILE CODE -------------*/
+@media(max-width: 540px){
+    .headline{
+        top: 350px;
+    }
+}
+@media(max-width: 1250px){
+    .headline{
+        font-size: 60px;
+    }
+}
+@media(max-width: 700px){
+    html, body {
+        overflow-x: hidden;
+    }
+    .headline{
+        font-size: 25px;
+        transform: translate(0, 230px);
+    }
+    .para{
+        font-size: 15px;
+    }
 }
 /*------------------------ NEWS SECTION ------- */
 .background{
@@ -163,35 +186,13 @@ nav{
     padding: 20px 12px;
     box-sizing: border-box;
 }
-
-/*--------------------- STOCKS SECTION ----------*/
-.stocks{
-    min-height: 60vh;
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 60px;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-}
-.stocks h1{
-    font-size: 25px;
-    font-weight: 400;
-}
-.stocks p{
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    padding-bottom: 100px;
-}
 /*---------------------- SERVICES SECTION -------*/
 .services{
     min-height: 60vh;
     width: 100%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 60px;
     background-position: center;
     background-size: cover;
     position: relative;
@@ -205,7 +206,7 @@ nav{
     font-size: 14px;
     font-weight: 300;
     line-height: 22px;
-    padding-bottom: 10px;
+    padding-bottom: 25px;
 }
 /*---------------------- IN BOX CONTENT --------*/
 .media-element1 h4{
@@ -589,28 +590,29 @@ nav{
     position: relative;
 }
 .contact img{
-    width: 150px;
+    padding-top: 20px;
+    width: 100px;
 }
 .contact h4 a{
-    color:white;
+    color:black;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 12px;
     font-weight: 300;
     transition: .5s;
 }
 .contact h4 a:hover{
-    color: gray;
+    opacity: 50%;
     transition: .5s;
 }
 .contact p{
-    color: white;
+    color: black;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     font-size: 11px;
 }
 .table2{
     display: table;
     margin: auto;
-    padding-bottom: 80px;
+    padding-bottom: 50px;
 }
 .table2 ul li{
     float: left;

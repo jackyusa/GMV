@@ -7,8 +7,7 @@ const para = document.querySelector('.para');
 
 const t1 = new TimelineMax();
 
-t1.fromTo(hero,1,{height: "0%"},{height: '100%'})
-.fromTo(slider,.8,{x:'-100%'},{x:'0%'})
+t1.fromTo(hero,1,{height: "220%"},{height: '100%'})
 .fromTo(para,.8,{x:'-110%'},{x:'0%'})
 .fromTo(logo,.8,{y:'-400%'},{y:'0%'},"-=.8")
 .fromTo(hamburger,.8,{y:'-400%'},{y:'0%'},"-=.7")
@@ -34,3 +33,8 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 };
+
+AOS.init({
+    offset:400,
+    duration: 1000
+});
