@@ -4,13 +4,25 @@ const hamburger = document.querySelector('.hamburger');
 const headline = document.querySelector('.headline');
 const para = document.querySelector('.para');
 const menu = document.querySelector('.menu');
+const newsScreen = document.querySelector('.newsExpanded');
+const newsButton = document.querySelector('.btn1');
+const newsCloseButton = document.querySelector('.newsClose');
 
+// MENU CONTROLS
 hamburger.addEventListener('click', ()=>{
     menu.classList.toggle('open');
 });
 
 menu.addEventListener('click', ()=>{
     menu.classList.toggle('open');
+});
+
+// NEWS CONTROLS
+newsButton.addEventListener('click', ()=>{
+    newsScreen.classList.toggle('newsOpen');
+});
+newsCloseButton.addEventListener('click', ()=>{
+    newsScreen.classList.toggle('newsOpen');
 });
 
 const t1 = new TimelineMax();
@@ -40,3 +52,32 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 };
+
+const flightPath = {
+    curviness: 1.5,
+    autoRotate: true,
+    values: [
+        {x: 100, y: -20},
+        {x: 500, y: 10}
+    ]
+}
+
+const tween = new TimelineLite();
+
+tween.add(
+    TweenLite.to('.smoke', 1, {
+        bezier: flightPath
+    })
+)
+
+const controller = new ScrollMagic.Controller();
+
+const scene = new ScrollMagic.Scene({
+    triggerElement: '.animation',
+    duration: 6000,
+    triggerHook: .25
+
+})
+.setTween(tween)
+.addIndicators()
+.addTo(controller);

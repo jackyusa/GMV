@@ -47,11 +47,12 @@ nav{
     align-items: center;
 }
 .hamburger{
-    position: relative;
+    position: flex;
     justify-self: end;
     width: 20px;
     cursor: pointer;
 }
+/* ---------------- NAVIGATION MENU -------*/
 .menu{
     display: flex;
     position: fixed;
@@ -78,7 +79,65 @@ nav{
     font-size: 40px;
     text-align: center;
 }
-
+/* --------------------- NEWS POPUP --------- */
+.story{
+    width: 800px;
+    height: 800px;
+    background-color: #F1B581;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+}
+.story img{
+    width: fit-content;
+}
+.story h3{
+    font-size: 30px;
+}
+.story p{
+    font-size: 15px;
+}
+.newsExpanded{
+    display: flex;
+    position: fixed;
+    width: 10px;
+    background: rgba(0, 0, 0, 0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    right: 100%;
+    top: 0;
+    transition: .9s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.newsColumns{
+    margin: auto;
+    display: grid;
+    grid-gap: 50px;
+    opacity: 100%;
+    width: 50%;
+    background-color: #EDA361;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.newsExpanded.newsOpen{
+    transition: .9s ease-in-out;
+    right: 0;
+}
+.newsClose{
+    justify-self: end;
+    cursor: pointer;
+    column-gap: 20px;
+}
+/*------------------------ TITLE SECTION --------*/
 .title{
     display: flex;
     height: 80vh;
@@ -126,7 +185,7 @@ nav{
 }
 /*------------------------ NEWS SECTION ------- */
 .background{
-    background-color: #EDA361
+    background-color: #EDA361;
 }
 .news{
     min-height: 60vh;
@@ -233,7 +292,8 @@ nav{
     overflow-y: hidden;
 }
 .card img{
-    max-width: 100%;
+    max-width: 200px;
+    max-height: 200px;
 }
 .card{
     display: grid;
@@ -318,6 +378,15 @@ nav{
     transition: .5s;
 }
 /*------------------ ANIMATION ------------------*/
+.smoke{
+    position: absolute;
+    width: 90px;
+}
+.animation{
+    /*display: grid;*/
+    display: none;
+    position: relative;
+}
 .animation-area{
     width: 0;
 }
